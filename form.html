@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <header>
+
+      <link rel="stylesheet" href="css/style.css">
+        <title></title>
+
+    </header>
+    <body>
+          <form id="regForm" action="">
+
+        <h3>REG FORM</h3>
+        
+        <!-- First Page-->
+        <div class="tab">
+            <label>Name</label><br>
+            <div >
+                <input type="text" class="in2"placeholder="First">
+                <input type="text" class="in2"placeholder="Last">
+            </div>
+
+            <label>Date of Birth</label><br>
+            <input type="date" class="in1" placeholder="MM/DD/YYYY"><br>
+
+            <label>Email</label><br>
+            <input type="text" class="in1" placeholder="Email"><br>
+
+            <label>Father's name</label><br>
+            <div>
+                <input type="text" class="in2"placeholder="First">
+                <input type="text" class="in2"placeholder="Last">
+            </div>
+
+            <label>Mather's name</label><br>
+            <div>
+                <input type="text" class="in2"placeholder="First">
+                <input type="text" class="in2"placeholder="Last">
+            </div><br>
+
+            <div>
+            <input type="radio" class="radio-button" name="r1">
+                <label>M</label>
+                <input type="radio" class="radio-button" name="r1">
+                <label>F</label>
+
+
+
+            </div><br>
+
+            <label>Nationality</label><br>
+            <input type="text" class="in1" placeholder="Nationality"><br>
+
+            <label>Home Address</label><br>
+            <input type="text" class="in1" placeholder="Street Address"><br><br>
+
+            <div>
+                <input type="text" class="in2"placeholder="City">
+                <label>country</label>
+                <select class="country">
+                    <option>select a country</option>
+                    <option>India</option>
+                    <option>America</option>
+                    <option>UN</option>
+                    <option>Japan</option>
+                </select>
+            </div><br>
+
+
+            <label>Telephone - Home</label><br>
+            <input type="text" class="in1" placeholder="### ### ####"><br>
+
+            <label>Telephone - Mobile</label><br>
+            <input type="text" class="in1" placeholder="### ### ####"><br>
+
+        </div>
+        
+        <!-- Second Page-->
+        <div class="tab">
+
+
+          <label>HSC</label><br>
+          <div >
+              <input type="text" class="in2"placeholder="HSC Name">
+              <input type="text" class="in2"placeholder="Board">
+          </div>
+
+          <label>HSC Score</label><br>
+          <input type="text" class="in1" placeholder="Score"><br>
+
+          <label>SSC</label><br>
+          <div >
+              <input type="text" class="in2"placeholder="SSC Name">
+              <input type="text" class="in2"placeholder="Board">
+          </div>
+
+          <label>SSC Score</label><br>
+          <input type="text" class="in1" placeholder="Score"><br>
+
+          <label>Current</label><br>
+          <div >
+              <input type="text" class="in2"placeholder="Pursuing">
+              <input type="text" class="in2"placeholder="Institution">
+          </div>
+
+          <label>Overall Parcentage</label><br>
+          <input type="text" class="in1" placeholder="Overall"><br>
+
+          <label>Current backlogs</label><br>
+          <input type="text" class="in1" placeholder="backlogs"><br>
+      </div></br>
+        
+        <!-- Third Page-->
+        <div class="tab">
+          <label>Upload these files</label><br><br>
+          
+          Recent passport :<input type="file"><br>
+          HSC mark sheet : <input type="file"><br>
+          SSC mark sheet : <input type="file"><br>
+          All semesters mark sheet : <input type="file"><br>
+        </div></br>
+            
+        <div style="overflow:auto;">
+          <div style="float:right;">
+            <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+            <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+          </div>
+        </div>
+        
+        <!-- Circles which indicates the steps of the form: -->
+        <div style="text-align:center;margin-top:40px;">
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+        </div>
+    
+    
+        </form>
+        <script src="js/js.js"></script>
+    </body>
+</html>
